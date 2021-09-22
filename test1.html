@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAYE and Deduction Calculator</title>
+</head>
+<body>
+<div class="lead-form-innr border1px"><h3>Input your payroll data</h3>
+  <input type="hidden" value="5468" id="submitted-form-id">
+  <input type="hidden" id="wb-remote-ip" value="102.223.84.20">
+  <input type="hidden" id="wb-form-token" value="REhsdmtUdzAvSjRuVkdIVUxWSWIwRis1WlhYUUFORVdwOFpsL2VpZGRuaz0=">
+
+  <div class="input-field">
+    <input type="hidden" class="seeker required">
+    <input type="text" class=" " id="payroll-month" name="payroll-month" placeholder="Payroll Month" title="Payroll Month" data-type="text" value="September">
+  </div>
+<br>
+
+  <div class="input-field">
+    <input type="hidden" class="seeker required">
+    <input type="number" class=" " id="basic-salary" name="basic-salary" placeholder="Basic Salary" title="Basic Salary" data-type="number" value="">
+  </div>
+<br>
+
+  <div class="input-field">
+    <input type="hidden" class="seeker ">
+    <select class="" id="treat-salary-as" name="treat-salary-as" title="Treat Salary As">
+      <option value="">Select Treat Salary As</option><option value="Basic Pay">Basic Pay</option><option value="Net Pay">Net Pay</option></select>
+  </div>
+  <br>
+
+  <div class="input-field">
+    <input type="hidden" class="seeker ">
+    <select class="" id="nssf-rates" name="nssf-rates" title="NSSF Rates">
+      <option value="">Select NSSF Rates</option><option value="Old NSSF Rates" selected="">Old NSSF Rates</option><option value="New NSSF Rates">New NSSF Rates</option></select>
+  </div>
+  <br>
+
+  <div class="input-field">
+    <label><input type="hidden" class="seeker ">
+      <input type="checkbox" class=" " title="Deduct NHIF" id="deduct-nhif" name="deduct-nhif" data-type="" checked="checked"> Deduct NHIF</label>
+  </div>
+<br>
+
+  <div class="input-field">
+    <input type="hidden" class="seeker ">
+    <select class="" id="round-off" name="round-off" title="Round Off">
+      <option value="">Select Round Off</option><option value="0.01" selected="">0.01</option><option value="0.10">0.10</option><option value="0.50">0.50</option><option value="1">1</option></select>
+  </div>
+  <br>
+
+  <div class="input-field hidden">
+    <input type="hidden" class="seeker required">
+    <input type="hidden" class=" " title="Action" id="action" name="action" value="calculator">
+  </div>
+<br>
+
+  <div class="input-field hidden">
+    <input type="hidden" class="seeker required">
+    <input type="hidden" class=" " title="Category" id="category" name="category" value="paye">
+  </div>
+
+  <div class="input-field"><input type="button" value="Calculate" class=""></div><div style="clear:both;"></div><div id="response"></div>
+
+</form></div>
+</body>
+</html>
+
