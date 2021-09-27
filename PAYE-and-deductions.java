@@ -29,6 +29,9 @@ public class calculator {
 
 //      Calculate net salary
         netSalary = grossSalary - PAYEE;
+        
+//      Calculate Personal Relief
+        personalRelief = PAYEE - 2400;
 
         System.out.println("Your salary is Ksh: + netSalary");
         
