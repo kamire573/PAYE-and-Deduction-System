@@ -33,7 +33,7 @@ public class calculator {
 //      Calculate Personal Relief
         personalRelief = PAYEE - 2400;
 
-        System.out.println("Your salary is Ksh: + netSalary");
+        System.out.println("Your salary is Ksh:" + personalRelief );
         
     }
 }
